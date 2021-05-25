@@ -1,0 +1,17 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           11/07/2020
+//==============================================
+// Reflection
+//==============================================
+
+
+
+  I use sort function in Algorithm library, it's a built in function and it's efficient approach, and I don't need to rewrite again. It's not easy to write a sort function, it will take me lots of time to build.  Also use the built in function is more reliable, because it's been tested, if I write it by myself then I still need lots of time to test it works or not.
+
+First, using the sort function defined in STL will help us not to invent the wheel again since this function is already created and it has been tested to ensure the performance and efficiency of the program. Creating the sort function using the loop. Second using the sort function will make the code to be sorter and easier to use because the sort function in STL has been designed so it can work with custom callback function and all kind of data or field inside a collection like a container. This is different from using the loop. Using the loop, we need to create one for the letter sorting which we will be limited into one field inside the collection only. In the program that I created, sometimes if the sorting encounter 2 fields has the same value then it need to sort those 2 rows (which contain field that is the same) based on other fields inside those 2 rows. If we need to design the sorting program and it must deal with this case, then it is hard to sort since it going to messing up with the loop because we are changing the index of the collection of data and in C++ messing up with collection that contains pointers like is dangerous that could lead to leaking or memory corruption. In additions, using the loop with COLLECTIONS is not easy because if sorting an array with number then it going to be easy, but sorting based on the string will be harder because not only we need to consider the string value to sort from A-Z but also, we need to sort them using the length too. And using the loop mean that we need to write template so it can also work with the number since we need to sort based on the price or the year too.
+
+For the function that sorts the collection of songs, if checking the parameter does not match anything then we going to throw an exception to let the user and the compiler know about the error so the use can type it again. This is the way that we use in another program like git. So, if we provide the wrong parameter, then the command will be stop and it thrown an exception to stop the program to go on. 

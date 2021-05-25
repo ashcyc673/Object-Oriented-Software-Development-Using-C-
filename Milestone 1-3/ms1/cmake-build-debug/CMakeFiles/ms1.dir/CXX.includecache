@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/ms1/Station.cpp
+Station.h
+/Users/ashleyc./Desktop/ms1/Station.h
+
+/Users/ashleyc./Desktop/ms1/Station.h
+Utilities.h
+/Users/ashleyc./Desktop/ms1/Utilities.h
+iostream
+-
+
+/Users/ashleyc./Desktop/ms1/Utilities.h
+iostream
+-
+

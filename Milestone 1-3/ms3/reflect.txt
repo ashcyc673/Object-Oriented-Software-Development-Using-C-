@@ -1,0 +1,24 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           11/27/2020
+//==============================================
+// Reflection      
+//==============================================
+
+ 
+In this project, the first problem that I encounter was how to create a function to read the data from the text file and how to normalize the data to make them valid when reading into the program. To solve this problem first we need to check if the next location to search for the delimiter is not the end of the string that we read from the data file, next we need to find the location of the delimiter and we need to return the string that is before the delimiter position, however, in this step I need to make sure that the string is not empty to return the token to the user. If the location of the delimiter cannot be found, it means that the token that we are trying to extract is the last. This is the algorithm that I develop for the extracted token.  
+
+The next problem that I found more challenging is how to link all workstations together to make an assembly line, to do it, then I had to read from the data file and search for the first token and compare it with all workstation to find the workstation that matches that name and assign it to the first workstation variable in the linked list. Next, I keep reading the text file and doing compare the name and link all workstations together. The tricky part is to get the first workstation to access the first linker in the linked list. This first variable is going to be used for running the assembly line.   
+
+In my opinion, this project is quite small and implement multithreading won’t be needed however, in the MS3, there is a part about running the assembly line and filling the order that could be done using multithreading. I think that if the filling task is big enough that would bring the processing time down if we all do the filling at all workstations in one thread. Then I think we can implement multithreading in this project. So, the design that I had is first making the filling process to be a task that would require the injection of the workstation. Then we going to make a thread pool to push back all threads that contain each workstation and the task that we created and then we will loop through all of them and join them into the main thread.  
+
+By following this design then the program will run each station parallel to each other without waiting for other stations to fill the orders. Since all thread follow this design won’t going into a racing condition because I did think of how to separate the memory for all of them and no memory sharing, in this case, therefore, it would help the code to run stable.   
+The moving process could follow this design however, it needs to have a mechanism to lock the thread since move order around from one station to another station require to modify the workstation container so if I did multithreading in this one without locking (Mutex) then it would lead to memory corruption.  
+
+Using threading is good in this milestone however from what I researched doing threading in this milestone won’t be needed (Immature optimization is the root of all evil) since it would only take about 3 seconds to run this program and implement such complex multithreading to save about 2 seconds is not needed in this case so that is the reason why I did not do it but using a normal for loop to do the job.   
+Another thing that I feel I could do better than I could do unit testing in this milestone, but I do not know how to do it and the reason why I want to do it is that using the school testing file takes a long time to debug and find leak since it won't say where is the function that creates the error, but I need to debug the program and go slow to find the problem which took so much time.   
+ 
+ 

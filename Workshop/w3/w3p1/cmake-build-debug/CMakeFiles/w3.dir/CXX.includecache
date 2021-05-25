@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/w3/Pair.h
+iostream
+-
+
+/Users/ashleyc./Desktop/w3/Set.cpp
+Set.h
+/Users/ashleyc./Desktop/w3/Set.h
+
+/Users/ashleyc./Desktop/w3/Set.h
+iostream
+-
+
+/Users/ashleyc./Desktop/w3/main.cpp
+fstream
+-
+iostream
+-
+iomanip
+-
+string
+-
+Set.h
+/Users/ashleyc./Desktop/w3/Set.h
+Pair.h
+/Users/ashleyc./Desktop/w3/Pair.h
+Set.h
+/Users/ashleyc./Desktop/w3/Set.h
+Pair.h
+/Users/ashleyc./Desktop/w3/Pair.h
+

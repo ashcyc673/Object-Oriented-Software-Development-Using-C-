@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/Workshop1/event.cpp
+event.h
+/Users/ashleyc./Desktop/Workshop1/event.h
+
+/Users/ashleyc./Desktop/Workshop1/event.h
+iostream
+-
+cstring
+-
+
+/Users/ashleyc./Desktop/Workshop1/w1_p2.cpp
+iostream
+-
+fstream
+-
+event.h
+/Users/ashleyc./Desktop/Workshop1/event.h
+event.h
+/Users/ashleyc./Desktop/Workshop1/event.h
+

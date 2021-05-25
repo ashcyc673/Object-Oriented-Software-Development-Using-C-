@@ -1,0 +1,31 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           11/24/2020
+//==============================================
+// Reflection      
+//==============================================
+
+We need the binary file to decrypt the encoded data to the original data, and also that file is going to be the backup file.
+
+Using the bind function help us to simplify the function signature which mean we do not need to provide the parameters that do not change during runtime, for example Cryptor() and key, so as a result using the bind function:
+Auto task = std::bind(&converter, std::placeholders::_1,key,std::placeholder::_2,Cryptor());
+We can just provide the thread the number of workload and the text with the custom offset.
+
+For the multithreading part, I made a mistake doing like this:
+auto task = std::bind(&converter, text, key, nbytes, Cryptor());
+        std::thread T1(task);
+        std::thread T2(task);
+        std::thread T3(task);
+
+        T1.join();
+        T2.join();
+        T3.join();
+It could lead to a racing condition, the reason why that code does not generate the error because the encryption or decryption task does not care if a racing condition happened because they would change the text to encrypted version or decrypted version depends on the context.  However, this is really dangerous if we implement such threading code into a vector container using STL.
+Since if 2 thread change the vector length at the same time it could lead to memory violation since 2 thread are trying to delete and resize the container at the same time, in this code I was divide the work into multiple workload with different offset therefore the thread won't share the same memory so it prevent memory corruption.
+
+For the second development, at first declare a variable to indicate how many thread do I want to use, and then I find the workload that need to be done by each thread by taking the total byte and divide by the number of thread and then I make a dynamic array to hold the instance of thread which is created alter in the first loop.  Next, I used the bind function to make the task for each thread but this bind function will only need to get 2 parameter which is the text with the offset and the number of workload for each thread.  The final thread will need to handle the number of workload that is created earlier and the remainder of work when we find the workload, so it needs to live outside of the for loop. Final I loop through all thread in the array and join them to make sure they are all finish before the main thread exit to prevent error, using loop make thing to be easier to read, write less code and easier to maintain the code later compare to the first version.
+
+

@@ -1,0 +1,18 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           10/09/2020
+//==============================================
+// Reflection
+//==============================================
+
+
+This is our second time learning template, and for this time is more in depth, I did the workshop part 1, but part 2 is totally another level,  I was very struggled with the specialization part in PairSummable header file. I'm not sure is that only Mac can't run it or it's I have the wrong definition, but I checked so many times, I got the right specialization format.  I looked up online what's that mean the compile error for duplicate symbol, and I found a way to solve this problem by using inline keyword, if we use inline that compiler will know that this specialized function is the same function that we declare above in the class.
+
+PairSummable(const K& key, const V& value = initial), for the initial is more like default value, in the main cpp file if the client code didn't assign a value for it, then system will use the default value.  I tried so many times but I just can't match the output, my code can't get the correct value from the text file, and I realized that I didn't update the value, so I tried to create the setter function and it work, but I just think value = initial must have other purpose, so I update my operator+= function, use the constructor to set the value. I'm glad it works.
+
+The reason why we need to specializing the operator+= member function, we are telling the compiler what exact the type is for this function, not just K,V need to specialized that both of this are std::string type, the initial value we need to specialized that we can use as a string also an integer from different function,
+And why we defining the class variable outside of the class if for the static variable, in template class if we want to initialize the static variable then we need to use this way to do it.
+

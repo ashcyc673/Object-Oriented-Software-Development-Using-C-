@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/2020 Fall term/OOP345/Week9/w9/SecureData.cpp
+iostream
+-
+fstream
+-
+string
+-
+thread
+-
+functional
+-
+vector
+-
+SecureData.h
+/Users/ashleyc./Desktop/2020 Fall term/OOP345/Week9/w9/SecureData.h
+
+/Users/ashleyc./Desktop/2020 Fall term/OOP345/Week9/w9/SecureData.h
+iostream
+-
+

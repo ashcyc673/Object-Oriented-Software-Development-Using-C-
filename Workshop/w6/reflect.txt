@@ -1,0 +1,19 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           11/07/2020
+//==============================================
+// Reflection
+//==============================================
+
+
+Originally vector will deallocate the memory automatically, we don't need to deal with it, but if we declare the type of vector as pointer then we need to deallocate memory by ourselves.  For the vector pointer type, it will only delete the container but not the elements inside, for example if we declare the array of pointer then when we deallocate the memory for the array of pointers, it will only delete the memory of the array of the pointer only, so we still need to delete all elements inside manually, this example is similar when we use vector, we declare the type of the vector to hold the pointer of vehicle, therefore, this vector will only hold the address of the vehicle objects and when the vector is deallocated then only the memory of the vector container is deleted just like the example of the array of pointer only the array of pointer is deleted for all element inside the array or the container is just address not real object.  Therefore, we need to delete every single object inside the container manually to free the memory.
+
+In the loadData() function I use try and catch way, if we need to use another approach to do it, we can use the constructor and where the code thrown the error, then we are going to set everything to the empty state and print out the error message, this is the way what we do in OOP244 before we learned try and catch, if the reading encounter the problem then set the object to the empty state and print out the message.
+
+std::vector<Vehicle*>, if we don't have pointer sign, then when we do += operation, it will make the copy of the original object and then add it to the vector, this also mean we will waste double of memory, and will other object when we created as we read them from the file, we will not use them anymore because we only work with object live inside the vector so we allocate more memory for nothing, but if we change to use the non pointer type, the program will still work but we going to waste the memory and it is not efficient.
+
+
+

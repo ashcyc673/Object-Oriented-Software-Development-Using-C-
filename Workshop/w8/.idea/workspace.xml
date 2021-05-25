@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="w8" targetName="w8" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="719e04dc-4db0-4b16-b688-a6839e664d0a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1kLezoVIVdRksPiY796Qiq6ImoM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="w8" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="Descriptions.dat BadPrices.dat Prices.dat" PASS_PARENT_ENVS_2="true" PROJECT_NAME="w8" TARGET_NAME="w8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="w8" RUN_TARGET_NAME="w8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="719e04dc-4db0-4b16-b688-a6839e664d0a" name="Default Changelist" comment="" />
+      <created>1605484564201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605484564201</updated>
+      <workItem from="1605484568439" duration="6905000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605484754274">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1605484754274" />
+    <state x="435" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605484659614">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="435" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1605484659614" />
+    <state width="602" height="773" key="GridCell.Tab.0.bottom" timestamp="1605559077833">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605559077833" />
+    <state width="602" height="773" key="GridCell.Tab.0.center" timestamp="1605559077831">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605559077831" />
+    <state width="602" height="773" key="GridCell.Tab.0.left" timestamp="1605559077830">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605559077830" />
+    <state width="602" height="773" key="GridCell.Tab.0.right" timestamp="1605559077832">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605559077832" />
+    <state width="602" height="773" key="GridCell.Tab.1.bottom" timestamp="1605559077835">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605559077835" />
+    <state width="602" height="773" key="GridCell.Tab.1.center" timestamp="1605559077834">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605559077834" />
+    <state width="602" height="773" key="GridCell.Tab.1.left" timestamp="1605559077834">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605559077834" />
+    <state width="602" height="773" key="GridCell.Tab.1.right" timestamp="1605559077835">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="602" height="773" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605559077835" />
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1605484567399">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1605484567399" />
+  </component>
+</project>

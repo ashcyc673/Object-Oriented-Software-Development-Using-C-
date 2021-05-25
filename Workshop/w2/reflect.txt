@@ -1,0 +1,25 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           10/03/2020
+//==============================================
+// Reflection
+//==============================================
+
+I learned a few new object types, to record the times and convert it to the right format.
+When I finished the workshop, I tried to compile and run it but it's super slow, can't even run actually, so I looked up online,
+to see is there any other way to make my program run faster, there are two library functions for reading the text file faster,
+which is vector and mmap, but mmap is for like super big files.  Our text file is big but no need to use mmap yet,
+so I tried vector, and looks more beginner friendly, and it did change my program performance, runs way faster than before.
+
+In vector there is a internal function called resize, to use push_back function to add new element into the array.  It will only
+allocate the new memory for the new element need to be added to the dynamic array, for all the old data will simply copy the address of old data
+not allocate memory and deep copy for those old data.  And vector will deallocate the memory automatically so we don't need to
+do it manually that's why program can run faster.
+
+For the move constructor and move operator only copy from the address, change the address of current to the new object,
+so it's more efficiency to run the program, on the other hand copy constructor is going to copy the whole value to the current
+object, then it needs to allocate the memory at first, and copy the old value to the new one, so it takes more time, will slow down the
+performance.

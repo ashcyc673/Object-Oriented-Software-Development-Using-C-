@@ -1,0 +1,20 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           11/15/2020
+//==============================================
+// Reflection
+//==============================================
+
+
+- the advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+
+For smart pointer when you call new you don't have to delete, in some cases you don't even need to call new, in this workshop the operator+= for the smart pointer one, I used unique_ptr that is when that pointer goes out of the scope and it will get destroy, so for the mergeSmart there is no need to call delete.
+
+
+
+- the difference between raw and smart pointer syntax in your solution.
+
+  So for mergeSmart compare to mergeRaw, they look almost the same, but when I allocate memory for smartPointer, I used unique_ptr to allocate it, it will delete the memory by itself, but raw pointer won't, so we need to delete by ourselves.   

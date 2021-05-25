@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/w6/Car.cpp
+Car.h
+/Users/ashleyc./Desktop/w6/Car.h
+
+/Users/ashleyc./Desktop/w6/Car.h
+iostream
+-
+sstream
+-
+iomanip
+-
+cctype
+-
+Vehicle.h
+/Users/ashleyc./Desktop/w6/Vehicle.h
+
+/Users/ashleyc./Desktop/w6/Vehicle.h
+iostream
+-
+string
+-
+

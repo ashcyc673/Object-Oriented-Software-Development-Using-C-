@@ -1,0 +1,25 @@
+//==============================================
+// Name:           Chiao-Ya Chang
+// Student Number: 130402191
+// Email:          cchang76@myseneca.ca
+// Section:        NGG
+// Date:           10/18/2020
+//==============================================
+// Reflection
+//==============================================
+
+In this module, we see that in the main module we create an object of sdds::Reservation** ppReservations = nullptr; 
+This variable will hold the original data of reservations which we need to read from the file and we allocated the space for the original data and copy all of these information to the ppReservations variable. In this case ppReservations is something like a container that holding the data of all reservations that we read from the file. 
+At the end of the main module, ppReservations will be freed or deallocated and we can see that since ppReservations object is managed by the main module (with allocation and deallocation) so it also means that main module plays a role of composition since it is the module that own the original reservations data. 
+ 
+Next, inside the Restaurant module, this module is called aggregations because it used the reference to the original data and then it will create (allocate) the memory for its own reservations container which is names as reserve variable and also it has a destructor that free the memory when the object is out of scope. However, this module just only use the reference to ppReservations only, it does not allocate or deallocate this object but only use the reference to ppReservations to create its own reservation data, so this is why it is called aggregations because it does not touch or manage the original data which is aggregations. 
+ 
+Finally, inside the ConfirmationSender module, this module is a associations because it does not own any data like aggregations or composition. This module just only taking the address of the ppReservations original data and then add the address of each single object of ppReservations to a variable and it does not allocate memory or deallocate memory for any single reservation object like the restaurant. It just allocates the memory for the variable which is something like a container to hold the address of the reference object that passed in the constructor which is ppReservations and copy the address of each object to its container only. 
+So, at the end the destructor will only delete the container variable, it DOES NOT DELETE THE original ppReservations data. 
+ 
+The difference between the implementations of a composition and an aggregation:  
+Composition is a class or module that own an original data and it need to manage the original data (allocation and deallocation).  
+Aggregation is also a composition, but the difference is aggregation will only use the reference to the original data and make a copy of the original data and the class that is aggregation will manage the copy version with allocation and deallocation, it DOES NOT MANAGE OR TOUCH THE ORIGINAL DATA THAT PASSED INTO THE CONSTRUCTOR. Or in simple words, aggregation class will just use the original data and create a copy for example and manage that copy but it does not own the original data. 
+The different in copy and move of both composition and aggregation is that move will just transfer address of all data in the old object to the new object if it is a valid object (both of them) and change the ownership of the old object to the new object. While copy will basically allocate the memory for the copy version and do deep copying from the reference of the original data to make a version from the original.  
+ 
+

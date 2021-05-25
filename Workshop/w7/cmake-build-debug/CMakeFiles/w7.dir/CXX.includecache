@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ashleyc./Desktop/w7/SongCollection.cpp
+SongCollection.h
+/Users/ashleyc./Desktop/w7/SongCollection.h
+
+/Users/ashleyc./Desktop/w7/SongCollection.h
+string
+-
+cstring
+-
+iostream
+-
+vector
+-
+fstream
+-
+list
+-
+algorithm
+-
+

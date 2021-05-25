@@ -1,0 +1,3 @@
+/Users/ashleyc./Desktop/ms1/CMakeFiles/rebuild_cache.dir
+/Users/ashleyc./Desktop/ms1/CMakeFiles/edit_cache.dir
+/Users/ashleyc./Desktop/ms1/CMakeFiles/ms1.dir
